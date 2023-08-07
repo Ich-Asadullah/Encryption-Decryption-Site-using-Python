@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ASSASSIN'S Encryption</title>
+    <style>
+        /* Background for the entire page */
+        body {
+            background-image: url("https://mcdn.wallpapersafari.com/medium/43/12/Vh8dFx.jpg");
+            font-family: monaco;
+            margin: 0;
+            padding: 10px;
+        }
+
+        /* Head background */
+        h1 {
+            background-color: plum;
+            color:black;
+            padding: 10px;
+            text-align: center;
+            margin: 0;
+        }
+
+        /* Form styling */
+        form {
+            margin: 20px;
+            color: white;
+            max-width: 400px;
+            background-color: transparent;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        /* Input field styling */
+        input[type="text"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            color: white;
+            font-size: 16px;
+            border: 1px solid white;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background-color: transparent; /* Set the background to transparent */
+        }
+
+        /* Button styling */
+        input[type="submit"] {
+            color: white;
+            cursor: pointer;
+        }
+
+        p {
+            margin: 10px;
+            padding: 10px;
+            color: white;
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ASSASSIN's Encryption</h1>
+    <form action="/encrypt" method="post">
+        <label for="message">Enter message to Encrypt:</label>
+        <input type="text" id="message" name="message">
+        <input type="submit" value="Encrypt">
+    </form>
+    <form action="/decrypt" method="post">
+        <label for="encrypted_message">Enter message to Decrypt:</label>
+        <input type="text" id="encrypted_message" name="encrypted_message">
+        <input type="submit" value="Decrypt">
+    </form>
+    <h2>Output:</h2>
+    {% if output %}
+    <p>{{ output }}</p>
+    {% endif %}
+</body>
+</html>
