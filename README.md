@@ -3,4 +3,4 @@ Secure Cloud Encryption is a Python-based web application that provides a user-f
 
 **NOTE**
 Index.HTML should be saved in same Directory as app.py , in a folder named templates
-ipynb file is just for clearification of the working of the python File, Original File is app.py. That you will have to run on your Machine.
+ipynb file is just for clearification of the working of the python File, Original File is app.py. That will run on your Machine more easily without requirement of any IDE.
